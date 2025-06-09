@@ -24,11 +24,9 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
     "Cih2001/pikchr.nvim",
     lazy = false, -- or set true for lazy loading
     cmd = "Pikchr",
-    config = function()
-        require("pikchr").setup({
-            server_port = 1234,
-        })
-    end,
+    opts = {
+        server_port = 1234,
+    }
 },
 ```
 
